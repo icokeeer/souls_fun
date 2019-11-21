@@ -32,7 +32,10 @@
 
 <div class="main-wrapper" style="position: relative; top: -6vh;">
 <div class="container main-sentence justify-content-center text-center">
-    <span id="sentence" style="font-size: 1.9rem;">{{ context.soul_text }}</span>
+	    {% for soul_text in soul_text %}
+    <span id="sentence" style="font-size: 1.9rem;">{{ soul_text }}</span>
+	    {% endfor %}
+
 </div>
 </div>
 
