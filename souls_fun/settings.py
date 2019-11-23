@@ -26,9 +26,11 @@ SECRET_KEY = 't4@ofha0otlvi(!o&%&h+504y9m_-841h+dwfe)^&1nm)35$#h'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    thesouls.fun,
-    isouls.fun,
-    souls.imnewbie.cn
+    'thesouls.fun',
+    'www.thesouls.fun',
+    'isouls.fun',
+    'www.isouls.fun',
+    'souls.imnewbie.cn'
 ]
 
 
