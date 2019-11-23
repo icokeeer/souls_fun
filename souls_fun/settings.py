@@ -25,7 +25,11 @@ SECRET_KEY = 't4@ofha0otlvi(!o&%&h+504y9m_-841h+dwfe)^&1nm)35$#h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    thesouls.fun,
+    isouls.fun,
+    souls.imnewbie.cn
+]
 
 
 # Application definition
@@ -80,8 +84,8 @@ DATABASES = {
         'NAME': 'souls-fun',
         'USER': 'admin',
         'PASSWORD': 'dujitang',
-        'HOST': 'p.imnewbie.cn',
-        'PORT': '33060',
+        'HOST': 'database-1.crlawlak0xxd.ap-northeast-2.rds.amazonaws.com',
+        'PORT': '3306',
         'OPTIONS': {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"',
             'charset': 'utf8'
