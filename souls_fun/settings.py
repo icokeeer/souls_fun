@@ -30,7 +30,6 @@ ALLOWED_HOSTS = [
     'www.thesouls.fun',
     'isouls.fun',
     'www.isouls.fun',
-    'souls.imnewbie.cn'
 ]
 
 # Application definition
