@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't4@ofha0otlvi(!o&%&h+504y9m_-841h+dwfe)^&1nm)35$#h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'thesouls.fun',
@@ -32,7 +32,6 @@ ALLOWED_HOSTS = [
     'www.isouls.fun',
     'souls.imnewbie.cn'
 ]
-
 
 # Application definition
 
@@ -44,8 +43,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'werkzeug_debugger_runserver',
-    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +132,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/apps/souls_fun/static'
