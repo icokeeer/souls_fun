@@ -1,0 +1,16 @@
+#this file is used to control uwsgi service through systemctl.
+[Unit]
+Description=uwsgi service
+After=network.target
+
+[Service]
+Type=forking
+PIDFile=/run/uwsgi.pid
+ExecStart=/usr/local/bin/uwsgi --ini /apps/souls_fun/uwsgi.ini
+ExecReload=/usr/local/bin/uwsgi --reload /run/uwsgi.pid
+ExecStop=/usr/local/bin/uwsgi --stop /run/uwsgi.pid
+TimeoutStopSec=5
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
