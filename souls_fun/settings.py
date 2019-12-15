@@ -23,11 +23,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 't4@ofha0otlvi(!o&%&h+504y9m_-841h+dwfe)^&1nm)35$#h'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     'thesouls.fun',
     'www.thesouls.fun',
+    '127.0.0.1',
     'isouls.fun',
     'www.isouls.fun',
 ]
@@ -84,8 +85,10 @@ DATABASES = {
         'NAME': 'souls-fun',
         'USER': 'admin',
         'PASSWORD': 'dujitang',
-        'HOST': 'database-1.crlawlak0xxd.ap-northeast-2.rds.amazonaws.com',
-        'PORT': '3306',
+        'HOST': 'thesouls.fun',
+        'PORT': '33060',
+        # 'HOST': 'database-1.crlawlak0xxd.ap-northeast-2.rds.amazonaws.com',
+        # 'PORT': '3306',
         'OPTIONS': {
             'init_command': 'SET sql_mode="STRICT_TRANS_TABLES"',
             'charset': 'utf8'
@@ -131,4 +134,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/apps/souls_fun/static'
+# STATIC_ROOT = '/apps/souls_fun/static'
