@@ -30,7 +30,7 @@
 </div>
 </div>
 
-<div class="main-wrapper" style="position: relative; top: -6vh;">
+<div class="main-wrapper" style="position: relative; bottom:-32vh; width:100%">
 <div class="container main-sentence justify-content-center text-center">
 <!--	    {% for soul_text in soul_text %}-->
 <!--    <span id="sentence" style="font-size: 1.9rem;">{{ soul_text }}</span>-->
@@ -38,9 +38,12 @@
 
 	<form method="post">
     {% csrf_token %}
-    <input type="text" style="width:600px" name="context">
+    <input type="text" class="btn disabled btn-primary btn-md" style="border:1px solid #378888; width:60%; color:#000000; font-size:15px;
+" name="context">
 		<br></br>
-    <input class="btn btn-primary btn-filled btn-xs" type="submit" value="留下一碗">
+		<a class="btn btn-primary btn-filled btn-sm" style="margin-right:6%" href="#">再干一碗</a>
+    <input class="btn btn-primary btn-filled btn-sm" type="submit" value="留下这碗">
+
 
 </form>
 	</div>
