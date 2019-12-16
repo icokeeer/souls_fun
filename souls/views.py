@@ -17,6 +17,11 @@ def boil(request):
         return render(request, 'boil.html')
     elif request.method == 'POST':
         context = request.POST.get('context')
+        if context == "":
+            soul_text = '请正确输入您的鸡汤，重新尝试...'
+            return render(request, 'index.html', {'soul_text': soul_text})
+        else:
+            pass
         result = SoulsText.objects.create(
             souls_text=context,
             status='none',
